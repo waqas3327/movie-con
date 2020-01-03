@@ -13,7 +13,13 @@ export class RegisterPage implements OnInit {
   loading = false;
   public clicked = false;
   getData: FormGroup;
-  constructor(private fb: FormBuilder, private router: Router, private uuserService: UserService) { }
+  constructor(private fb: FormBuilder, private router: Router, private uuserService: UserService) { this.backbutton(); }
+  backbutton() {
+    console.log('backbutton');
+    document.addEventListener('backbutton', () => {
+      console.log('backbutton1');
+  });
+  }
   ngOnInit() {
     this.formInitializer();
   }

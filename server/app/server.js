@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const bcrypt = require('bcryptjs');
 const app = express();
 let nodemailer = require('nodemailer');
 mongoose.connect('mongodb+srv://waqas3327:03105593105@cluster0-kv7vt.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true,useUnifiedTopology:true});
@@ -24,6 +25,13 @@ app.post('/register', async (req, res) => {
   const body = req.body;
   console.log('req.body', body);
   const email = body.email;
+  const password = body.password;
+
+    var salt = bcrypt.genSaltSync(10);
+    var hash = bcrypt.hashSync(password, salt);
+
+    console.log('hash - > ', hash);
+    body.password = hash;
     const result = await DataTable.findOne({"email":  email});
     if(!result) // this means result is null
     {
@@ -60,7 +68,7 @@ app.post('/register', async (req, res) => {
       // email did exist 
       // so lets match password 
 
-      if(body.password === result.password){
+      if ( bcrypt.compareSync(body.password, result.password)){
 
         // great, allow this user access 
 

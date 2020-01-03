@@ -3,7 +3,10 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { CanActivate, Router } from '@angular/router';
 import { GuardService } from './sdk/custom/guard.service';
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  {  path: '',
+     redirectTo: 'movies',
+     pathMatch: 'full'
+  },
   { path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },

@@ -9,7 +9,13 @@ import { ActivatedRoute } from '@angular/router';
 export class MoviedetailsPage implements OnInit {
   information = null;
   loading = true;
-  constructor(private activatedRoute: ActivatedRoute, private movieService: BeersService) { }
+  constructor(private activatedRoute: ActivatedRoute, private movieService: BeersService) { this.backbutton(); }
+  backbutton() {
+    console.log('backbutton');
+    document.addEventListener('backbutton', () => {
+      console.log('backbutton1');
+  });
+  }
   ngOnInit() {
     // Get the ID that was passed with the URL
     const id = this.activatedRoute.snapshot.paramMap.get('id');

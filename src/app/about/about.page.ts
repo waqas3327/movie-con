@@ -8,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class AboutPage implements OnInit {
 // tslint:disable-next-line: prefer-const
 
-constructor() { }
+constructor() { this.backbutton(); }
+backbutton() {
+  console.log('backbutton');
+  document.addEventListener('backbutton', () => {
+    console.log('backbutton1');
+});
+}
 ngOnInit() {
   }
 

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Movie-Con</string>
-    <string name="title_activity_main">Movie-Con</string>
-    <string name="package_name">com.project.moviecon</string>
-    <string name="custom_url_scheme">com.project.moviecon</string>
+    <string name="app_name">Movieterz</string>
+    <string name="title_activity_main">Movieterz</string>
+    <string name="package_name">com.project.movieterz</string>
+    <string name="custom_url_scheme">com.project.movieterz</string>
 </resources>

@@ -14,17 +14,18 @@ and shows their details like: director, imdb rating, stars etc.</p>
 -> Deployed on mlab.com
 <br>
 <br>
-
-<img src="home.PNG" width="800">
-<img src="register.PNG" width="800">
-<img src="sidebar.PNG" width="800">
-<img src="resetp.PNG" width="800">
-<img src="recovery.PNG" width="800">
+<h1>Link to APK file:</h1>
+<p><a>https://drive.google.com/open?id=16oYMdavsbF-6_Y0GjR6eRpqxiD3KbVFz</a></p>
+<img src="Capture2.PNG" width="800">
+<img src="Capture3.PNG" width="800">
 <img src="Capture5.PNG" width="800">
 <img src="Capture6.PNG" width="800">
 <img src="Capture7.PNG" width="800">
 <img src="Capture8.PNG" width="800">
-<img src="fullwindow.PNG" width="800">
+<img src="sidebar.PNG" width="800">
+<img src="c.PNG" width="800">
+<img src="Capture1.PNG" width="800">
+<img src="recovery.PNG" width="800">
 
 <h1>Running Project</h1>
 -> git clone or download repository<br>

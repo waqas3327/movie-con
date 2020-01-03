@@ -15,7 +15,13 @@ export class MoviesPage implements OnInit {
   loading = false;
   // tslint:disable-next-line: ban-types
   // tslint:disable-next-line: variable-name
-  constructor(private http: BeersService, private router: Router) { }
+  constructor(private http: BeersService, private router: Router) { this.backbutton(); }
+  backbutton() {
+    console.log('backbutton');
+    document.addEventListener('backbutton', () => {
+      console.log('backbutton1');
+  });
+  }
   ngOnInit() {
   }
   ngViewWillLeave() {

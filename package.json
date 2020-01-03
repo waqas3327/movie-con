@@ -27,9 +27,11 @@
     "@ionic-native/status-bar": "^5.18.0",
     "@ionic/angular": "^4.11.7",
     "@ionic/storage": "^2.2.0",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "capacitor": "^0.5.5",
     "cordova": "^9.0.0",
+    "cordova-plugin-splashscreen": "^5.0.2",
     "core-js": "^2.6.11",
     "cors": "^2.8.5",
     "express": "^4.17.1",
@@ -72,5 +74,10 @@
   },
   "description": "An Ionic project",
   "main": "karma.conf.js",
-  "license": "ISC"
+  "license": "ISC",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-splashscreen": {}
+    }
+  }
 }

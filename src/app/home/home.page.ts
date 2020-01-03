@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, Validators } from '@angular/forms';
 import { FormGroup } from '@angular/forms';
 import { UserService } from '../sdk/custom/user.service';
+import { AlertController, IonRouterOutlet } from '@ionic/angular';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -11,9 +12,49 @@ import { UserService } from '../sdk/custom/user.service';
 export class HomePage {
   loading: false;
   clicked = false;
+  lastTimeBackPress = 0;
+  timePeriodToExit = 2000;
+  @ViewChild(IonRouterOutlet, { static: false }) routerOutlets: IonRouterOutlet;
 
-  constructor(private router: Router, private formBuilder: FormBuilder, private service: UserService) {}
+  // tslint:disable-next-line: max-line-length
+  constructor(private alertController: AlertController, private router: Router, private formBuilder: FormBuilder, private service: UserService) { this.backbutton()}
   loginForm: FormGroup;
+  backbutton() {
+    console.log('backbutton');
+    document.addEventListener('backbutton', () => {
+      console.log('backbutton1');
+      if (this.routerOutlets && this.routerOutlets.canGoBack()) {
+        this.routerOutlets.pop();
+      } else if (this.router.url === '/home') {
+        if (new Date().getTime() - this.lastTimeBackPress >= this.timePeriodToExit) {
+          this.lastTimeBackPress = new Date().getTime();
+          this.presentAlertConfirm();
+        } else {
+          // tslint:disable-next-line: no-string-literal
+          navigator['app'].exitApp();
+        }
+      }
+    });
+      }
+     async presentAlertConfirm() {
+    const alert = await this.alertController.create({
+      // header: 'Confirm!',
+      message: 'Are you sure you want to exit the app?',
+      buttons: [{
+        text: 'Cancel',
+        role: 'cancel',
+        cssClass: 'secondary',
+        handler: (blah) => { }
+      }, {
+        text: 'Close App',
+        handler: () => {
+          // tslint:disable-next-line: no-string-literal
+          navigator['app'].exitApp();
+        }
+      }]
+    });
+    await alert.present();
+      }
   register() {
    this.router.navigate(['register']);
   }
@@ -69,5 +110,4 @@ export class HomePage {
     });
   }
 }
-
 

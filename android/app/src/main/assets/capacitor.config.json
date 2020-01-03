@@ -1,6 +1,6 @@
 {
-  "appId": "com.project.moviecon",
-  "appName": "Movie-Con",
+  "appId": "com.project.movieterz",
+  "appName": "Movieterz",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

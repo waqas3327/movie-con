@@ -1,4 +1,4 @@
-package com.project.moviecon;
+package com.project.movieterz;
 
 import android.os.Bundle;
 
