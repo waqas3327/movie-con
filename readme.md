@@ -15,7 +15,7 @@ and shows their details like: director, imdb rating, stars etc.</p>
 <br>
 <br>
 <h1>Link to APK file:</h1>
-<p><a>https://drive.google.com/open?id=16oYMdavsbF-6_Y0GjR6eRpqxiD3KbVFz</a></p>
+https://drive.google.com/open?id=16oYMdavsbF-6_Y0GjR6eRpqxiD3KbVFz
 <img src="Capture2.PNG" width="800">
 <img src="Capture3.PNG" width="800">
 <img src="Capture5.PNG" width="800">
