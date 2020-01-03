@@ -1,3 +1,4 @@
+<img src="src/assets/images/zz.png">
 <h1>Working:</h1>
 <p>This is simple application that allows you to search for movies,seasons,episodes etc,<br>
 and shows their details like: director, imdb rating, stars etc.</p>
@@ -22,37 +23,37 @@ https://drive.google.com/open?id=16oYMdavsbF-6_Y0GjR6eRpqxiD3KbVFz
 -> npm install<br>
 -> ionic serve<br><br>
 <strong>Login:</strong><br>
-<img src="Capture2.PNG" width="400">
+<img src="src/assets/images/Capture2.PNG">
 <br>
 <strong>Register:</strong><br>
-<img src="Capture3.PNG" width="400">
+<img src="src/assets/images/Capture3.PNG">
 <br>
 <strong>Movie Search:</strong><br>
-<img src="Capture5.PNG" width="400">
+<img src="src/assets/images/Capture5.PNG">
 <br>
 <strong>Movie Search:</strong><br>
-<img src="Capture6.PNG" width="400">
+<img src="src/assets/images/Capture6.PNG">
 <br>
 <strong>Movie Details:</strong><br>
-<img src="Capture7.PNG" width="400">
+<img src="src/assets/images/Capture7.PNG">
 <br>
 <strong>IMDB Rating:</strong><br>
-<img src="Capture8.PNG" width="400">
+<img src="src/assets/images/Capture8.PNG">
 <br>
 <strong>Sidebar:</strong><br>
-<img src="sidebar.PNG" width="400">
+<img src="src/assets/images/sidebar.PNG">
 <br>
 <strong>Forgot Password:</strong><br>
-<img src="c.PNG" width="400">
+<img src="src/assets/images/c.PNG">
 <br>
 <strong>About Section:</strong><br>
-<img src="e.PNG" width="400">
+<img src="src/assets/images/e.PNG">
 <br>
 <strong>Web View:</strong><br>
-<img src="Capture1.PNG" width="800">
+<img src="src/assets/images/Capture1.PNG">
 <br>
 <strong>Password Recovery:</strong><br>
-<img src="recovery.PNG" width="800">
+<img src="src/assets/images/recovery.PNG">
 <h2>Thanks!</h2>
 <h3>Regards:</h3>
 <p>Waqas Abbasi</p>
