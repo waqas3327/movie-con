@@ -24,6 +24,7 @@ and shows their details like: director, imdb rating, stars etc.</p>
 <img src="Capture8.PNG" width="800">
 <img src="sidebar.PNG" width="800">
 <img src="c.PNG" width="800">
+<img src="e.PNG" width="800">
 <img src="Capture1.PNG" width="800">
 <img src="recovery.PNG" width="800">
 
